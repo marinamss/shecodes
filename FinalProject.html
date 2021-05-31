@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fora Bolsonaro!</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #27b1be;
+        font-family: sans-serif;
+        font-size: 45px;
+        margin: 10px 30px 10px 30px;
+      }
+
+      h2 {
+        display: block;
+        margin-top: 0px;
+        text-align: center;
+        color: #085f63;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: #f8d95c;
+      }
+
+      p {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 18px;
+        color: #546379;
+        margin: 18px 30px 18px 30px;
+      }
+
+      strong {
+        color: #27b1be;
+      }
+
+      img {
+        display: block;
+        margin: 5px 0px 5px 0px;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 5px auto;
+        background: #ececec;
+        color: #085f63;
+        font-size: 20px;
+        font-family: sans-serif;
+        border-color: #085f63;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #085f63;
+        color: #ececec;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .page-content {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .see-case-numbers {
+        display: block;
+        text-align: center;
+        font-family: Arial, "Helvetica", sans-serif;
+        color: #ececec;
+        font-size: 20px;
+        text-decoration: none;
+        border: solid;
+        padding: 5px;
+        border-color: #fd5959;
+        background-color: #fd5959;
+        border-radius: 10px;
+      }
+
+      .see-case-numbers:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+      src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/899/original/Captura_de_Tela_2021-05-30_%C3%A0s_20.13.02.png?1622402045
+      alt=fora-bolsonaro/>
+      <div class="page-content">
+        <h1>A shoutout to a better future</h1>
+        <h2>Brazil deserves a real leader in charge</h2>
+        <p>
+          Brazil is facing one of the greatest challenges in its modern history.
+          The epidemiological, health and socioeconomic chaos caused by COVID-19
+          is exacerbated by the catastrophic and irresponsible government of the
+          president elect in 2018.
+
+          <strong
+            >We can no longer bear to mourn their deaths. We can no longer bear
+            to live without air </strong
+          >.
+          <br />
+          <br />
+          We deserves more than a president who thinks only of himself. We want
+          <strong>vaccine</strong>! We want <strong>health</strong>! We want
+          <strong>respect</strong>!
+        </p>
+        <hr />
+        <a
+          href="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&pickerSort=asc&pickerMetric=location&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Align+outbreaks=false&country=~BRA"
+          target="_blank"
+          class="see-case-numbers"
+          >See the COVID-19 case numbers in Brazil from Bolsonaro</a
+        >
+        <hr />
+        <button class="fora-bolsonaro-button">
+          Add your "FORA BOLSONARO!" message
+        </button>
+      </div>
+    </div>
+    <script>
+      function fora() {
+        let name = prompt("Write your first name");
+        if (name === "") {
+          alert("You didn't write your name");
+        } else {
+          let message = prompt("Write your Fora Bolsonaro message");
+          if (message === "") {
+            alert("You didn't leave your message");
+          } else {
+            alert(name + " says " + message);
+          }
+        }
+      }
+      let foraButton = document.querySelector(".fora-bolsonaro-button");
+      foraButton.addEventListener("click", fora);
+    </script>
+  </body>
+</html>
